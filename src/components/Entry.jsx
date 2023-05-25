@@ -9,7 +9,7 @@ export default function Entry(props) {
                 <div className="entry--detail">
                     <div className="entry--location">
                         <img src={locationimg} alt="location sign" />
-                        <span className="entry--country">{props.node.recordMeta.location}</span>
+                        <span className="entry--country">{props.node.recordMeta.location.toLowerCase()}</span>
                         <a className="text-xs" href={props.node.recordMeta.googlemapsurl}>View on Google Maps</a>
                     </div>
                     <div>

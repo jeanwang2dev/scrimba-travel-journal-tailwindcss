@@ -41,7 +41,7 @@ const App = () => {
     return (
         <div className="max-w-xl mx-auto">
             <Header />
-            <section className="container">
+            <section className="container p-2 md:p-10">
               <DisplayRecords />
             </section>
         </div>

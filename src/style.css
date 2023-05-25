@@ -38,15 +38,15 @@
     }
 
     .entry--location img {
-        @apply w-3 mr-1;
+        @apply w-[7px] mr-1;
     }
 
     .entry--location a {
-        @apply font-normal font-[10px] leading-3 decoration-1 text-[#918E9B];
+        @apply font-normal font-[10.24px] leading-3 decoration-1 text-[#918E9B];
     }
 
     .entry--country {
-        @apply font-normal text-[10px] leading-3 tracking-widest mr-3;
+        @apply font-normal uppercase text-[10.24px] leading-3 tracking-widest mr-3;
     }
 
     .entry--name {
