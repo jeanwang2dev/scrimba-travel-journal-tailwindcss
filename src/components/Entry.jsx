@@ -5,17 +5,17 @@ export default function Entry(props) {
     return (    
         <div className="entry">
             <div className="entry--wrap">
-                <img src={props.imageUrl} alt="view" className="entry--photo"/>
+                <img src={props.node.recordMeta.imageurl} alt="view" className="entry--photo"/>
                 <div className="entry--detail">
                     <div className="entry--location">
                         <img src={locationimg} alt="location sign" />
-                        <span className="entry--country">{props.location}</span>
-                        <a href={props.googleMapsUrl}>View on Google Maps</a>
+                        <span className="entry--country">{props.node.recordMeta.location}</span>
+                        <a className="text-xs" href={props.node.recordMeta.googlemapsurl}>View on Google Maps</a>
                     </div>
                     <div>
-                        <h2 className="entry--name">{props.title}</h2>
-                        <p className="entry--date">{props.startDate} - {props.endDate}</p>
-                        <p className="entry--desc">{props.description}</p>
+                        <h2 className="entry--name">{props.node.title}</h2>
+                        <p className="entry--date">{props.node.recordMeta.startdate} - {props.node.recordMeta.enddate}</p>
+                        <p className="entry--desc">{props.node.recordMeta.description}</p>
                     </div>
                 </div>
             </div>

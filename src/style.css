@@ -14,7 +14,55 @@
     }
 
     .header--text {
-        @apply text-white;
+        @apply text-white font-medium text-base leading-4 tracking-normal;
+    }
+
+    .entry {
+        @apply pt-11 pb-4 py-10
+    }
+
+    .entry--wrap {
+        @apply flex;
+    }
+
+    .entry--photo {
+        @apply w-[125px] h-[168px] rounded-md mr-5 mb-4;
+    }
+
+    .entry--detail {
+        @apply pt-4;
+    }
+
+    .entry--location {
+        @apply flex justify-start items-center;
+    }
+
+    .entry--location img {
+        @apply w-3 mr-1;
+    }
+
+    .entry--location a {
+        @apply font-normal font-[10px] leading-3 decoration-1 text-[#918E9B];
+    }
+
+    .entry--country {
+        @apply font-normal text-[10px] leading-3 tracking-widest mr-3;
+    }
+
+    .entry--name {
+        @apply mt-0 mb-3 font-bold text-2xl text-titleBlack;
+    }
+
+    .entry--desc {
+        @apply max-w-xs font-normal text-[11px];
+    }
+
+    .wrap {
+        @apply flex flex-col justify-center items-center;
+    }
+
+    .entry--line {
+        @apply w-full h-px bg-[#F5F5F5];
     }
 
 }
