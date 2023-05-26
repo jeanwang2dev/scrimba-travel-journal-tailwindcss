@@ -28,7 +28,7 @@ function DisplayRecords(){
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error : {error.message}</p>;
 
-    //console.log(data.records.edges.length);
+    console.log(data.records.edges);
 
     if(data.records.edges.length === 0){
         return <h1>There is no entry on this journal yet!</h1>
@@ -37,7 +37,14 @@ function DisplayRecords(){
     return data.records.edges.map(( item, key ) => (
         <Entry 
             key={key}
-            {...item}
+            //{...item}
+            title= {item.node.title}
+            imageUrl= {item.node.recordMeta.imageurl}
+            location= {item.node.recordMeta.location}
+            googleMapsUrl= {item.node.recordMeta.googlemapsurl}
+            startDate= {item.node.recordMeta.startdate}
+            endDate={item.node.recordMeta.enddate}
+            description={item.node.recordMeta.description}
         />
     ));
   
