@@ -24,14 +24,4 @@ export default function Entry(props) {
     )
 }
 
-Entry.defaultProps = {
-    id: 0001,
-    title: "SomePlace",
-    location: "SomeCountry",
-    googleMapsUrl: "https://goo.gl/maps/1DGM5WrWnATgkSNB8",
-    startDate: "27 Jan, 2021",
-    endDate: "8 Jun, 2021",
-    description: "some description.",
-    imageUrl: "https://source.unsplash.com/JmuyB_LibRo"
-}
 

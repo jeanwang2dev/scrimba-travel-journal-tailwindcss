@@ -27,6 +27,12 @@ function DisplayRecords(){
 
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error : {error.message}</p>;
+
+    //console.log(data.records.edges.length);
+
+    if(data.records.edges.length === 0){
+        return <h1>There is no entry on this journal yet!</h1>
+    }
   
     return data.records.edges.map(( item, key ) => (
         <Entry 
